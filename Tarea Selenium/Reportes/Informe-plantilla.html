@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Pruebas Automatizas Netflix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .result {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .result h2 {
+            margin-top: 0;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Informe de Pruebas Automatizadas Netflix</h1>
+    
+    <div class="result">
+        <h2>Prueba 1: Iniciar Sesión</h2>
+        {% if resultadosReportes[1] %}
+            <p class="success">Inicio de sesion exitoso.</p>
+        {% else %}
+            <p class="error">Error No se pudo iniciar sesión.</p>
+        {% endif %}
+    </div>
+    
+    <div class="result">
+        <h2>Prueba 2: Seleccionar Perfil</h2>
+        {% if resultadosReportes[2] %}
+            <p class="success">Perfil Seleccionado Correctamente.</p>
+        {% else %}
+            <p class="error">Error No se pudo seleccionar el Perfil.</p>
+        {% endif %}
+    </div>
+    
+    <div class="result">
+        <h2>Prueba 3: Escoger una Categoria</h2>
+        {% if resultadosReportes[3] %}
+            <p class="success">Categoria Seleccionada Exitosamente.</p>
+        {% else %}
+            <p class="error">Error No se pudo seleccionar la Categoria.</p>
+        {% endif %}
+    </div>
+    
+    <div class="result">
+        <h2>Prueba 4: Reproducir Una Serie</h2>
+        {% if resultadosReportes[4] %}
+            <p class="success">Reproduccion De Serie Exitosa.</p>
+        {% else %}
+            <p class="error">Error no se pudo Reproducir la Serie.</p>
+        {% endif %}
+    </div>
+    
+    <div class="result">
+        <h2>Prueba 5: Cambiar Al Perfil De Niños Desde Otro Perfil</h2>
+        {% if resultadosReportes[5] %}
+            <p class="success">Cambio a Perfil De Niños De forma Exitosa.</p>
+        {% else %}
+            <p class="error">Error En el Cambio de Perfil de Niños.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
